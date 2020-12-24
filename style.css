@@ -118,9 +118,10 @@
   max-width: 100%;
 }
 
-.top {
-  background-color: #696969;
+.header-top {
   line-height: 50px;
+  height: 100%;
+  background: linear-gradient(to bottom, #696969 29%, transparent 29%);
 }
 
 .nav-header {
@@ -131,22 +132,50 @@
   color: #c3c3c3;
   font-size: 12px;
   text-transform: uppercase;
+  display: block;
 }
 .nav-header li {
-  margin: 0px 20px;
+  margin: 0px 17px;
+  position: relative;
 }
 .nav-header li:first-child {
   margin-left: 0px;
 }
 
+.nav-header a::after {
+  content: "";
+  position: absolute;
+  width: 126%;
+  background-color: #ffc925;
+  height: 3px;
+  bottom: -1px;
+  left: -9px;
+  display: none;
+}
+
+.nav-header .h-line::after {
+  content: "";
+  position: absolute;
+  width: 126%;
+  background-color: #ffc925;
+  height: 3px;
+  bottom: -1px;
+  left: -9px;
+  display: block;
+}
+
+.logo {
+  display: flex;
+}
+
 .entrance {
-  height: 100%;
+  height: 99%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 .entrance .entrance-button {
-  height: 100%;
+  height: 103%;
   width: 125px;
   outline: none;
   border: none;
@@ -170,9 +199,23 @@
   height: 50px;
   background-color: #f5f5f5;
   border: none;
-  margin: 0px -24px 0px 20px;
-  text-indent: 10px;
+  margin: -1px -24px 0px 0px;
+  text-indent: 20px;
   outline: none;
+  font-weight: 600;
+  width: 209px;
+}
+.call-back ::-webkit-input-placeholder {
+  color: #000000;
+}
+.call-back :-moz-placeholder {
+  color: #000000;
+}
+.call-back ::-moz-placeholder {
+  color: #000000;
+}
+.call-back :-ms-input-placeholder {
+  color: #000000;
 }
 .call-back .button-call-back {
   width: 197px;
@@ -202,6 +245,7 @@
 }
 .header-actions .left {
   margin-left: 10px;
+  margin-top: 3.5px;
 }
 
 .button-header-action {
@@ -211,9 +255,6 @@
   cursor: pointer;
   margin-top: 7px;
 }
-.button-header-action img {
-  height: 30px;
-}
 
 .line {
   color: #e4e4e4;
@@ -221,6 +262,264 @@
   height: 60px;
   outline: none;
   border: 1px solid #e4e4e4;
+}
+
+.count-cart {
+  position: relative;
+}
+.count-cart img {
+  position: absolute;
+  left: 14px;
+  top: -24px;
+}
+.count-cart .counter-prod {
+  position: absolute;
+  left: 28px;
+  bottom: 9px;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.top-nav li {
+  position: relative;
+  width: 325px;
+  height: 53px;
+  border: 1px solid #f1f1f1;
+  display: block;
+  border-bottom: none;
+  line-height: 53px;
+  text-indent: 40px;
+}
+.top-nav li:last-child {
+  border: 1px solid #f1f1f1;
+}
+.top-nav li:first-child {
+  width: 264px;
+  height: 56px;
+  background-color: #aaaaaa;
+  color: #ffffff;
+  margin-left: 61px;
+  font-size: 20px;
+  border: none;
+}
+.top-nav li:first-child::first-letter {
+  text-transform: uppercase;
+}
+.top-nav li a {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.top-nav li a::after {
+  content: url(../../Desktop/testWezom/images/arr.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  margin-left: 110px;
+}
+.top-nav li .burger {
+  height: 56px;
+  width: 61px;
+  background-color: #858585;
+  position: absolute;
+  bottom: 0px;
+  left: -61px;
+}
+.top-nav li .burger .burger-el {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.top-nav li .burger .burger-el span {
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.top-nav li .burger .burger-el span:first-child {
+  top: 2px;
+  width: 60%;
+}
+.top-nav li .burger .burger-el span:nth-child(2) {
+  top: 6px;
+}
+.top-nav li .burger .burger-el span:nth-child(3) {
+  width: 40%;
+  bottom: 3px;
+}
+
+.search-block {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+}
+.search-block form {
+  width: 100%;
+  display: flex;
+}
+.search-block form input {
+  width: 70%;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  text-indent: 28px;
+}
+.search-block ul {
+  position: relative;
+  width: 150px;
+  background-color: #f5f5f5;
+}
+.search-block ul::before {
+  content: url(../../Desktop/testWezom/images/arrow.png);
+  color: #f5f5f5;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 18px;
+  left: 120px;
+}
+.search-block ul li {
+  line-height: 55px;
+  font-size: 14px;
+  color: #616161;
+  cursor: pointer;
+}
+.search-block ul li::first-letter {
+  text-transform: uppercase;
+}
+.search-block button {
+  width: 167px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #ff8900;
+  text-align: center;
+  line-height: 58px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.link-products-categories {
+  margin-top: 20px;
+  display: flex;
+  line-height: 75px;
+  background-color: #606a76;
+}
+.link-products-categories a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0px 28px;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.link-products-categories a::after {
+  content: "";
+  position: absolute;
+  width: 126%;
+  background-color: #ffc925;
+  height: 3px;
+  bottom: -1px;
+  left: -9px;
+  display: none;
+}
+.link-products-categories a img {
+  margin: 0px 15px;
+}
+.link-products-categories .h-line::after {
+  content: "";
+  position: absolute;
+  width: 126%;
+  background-color: #ffc925;
+  height: 3px;
+  bottom: -1px;
+  left: -9px;
+  display: block;
+}
+
+.block-filter {
+  background-color: #696969;
+}
+.block-filter .block-tabs {
+  display: flex;
+  width: 283px;
+  height: 46px;
+  margin-top: 25px;
+  margin-left: 37px;
+  margin-bottom: 23px;
+  background-color: #efefef;
+  padding: 3px;
+}
+.block-filter .block-tabs .tab {
+  width: 50%;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+}
+.block-filter .second-tab {
+  background-color: #ff8900;
+  color: #ffffff;
+}
+.block-filter .first-tab {
+  color: #9f9f9f;
+}
+
+.block-select .list-select {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+.block-select .num-select {
+  width: 75px;
+  margin-left: 15px;
+}
+.block-select .input-select {
+  width: 225px;
+  margin-left: 13px;
+}
+.block-select .submit-select {
+  width: 40px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 3px;
+}
+.block-select li {
+  position: relative;
+  width: 223px;
+  height: 43px;
+  line-height: 43px;
+  text-indent: 15px;
+  background-color: #ffffff;
+  color: #9c9c9c;
+  margin: 0px 9px;
+  cursor: pointer;
+}
+.block-select li::before {
+  content: url(../../Desktop/testWezom/images/select-icon.png);
+  color: #696969;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 188px;
 }
 
 * {

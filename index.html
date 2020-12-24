@@ -15,23 +15,21 @@
 </head>
 
 <body>
-    <header>
-        <div class="top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <ul class="nav-header">
-                            <li><a href="#">главная</a></li>
-                            <li><a href="#">о компании</a></li>
-                            <li><a href="#">ссылка 1</a></li>
-                            <li><a href="#">ссылка 2</a></li>
-                            <li><a href="#">ссылка 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <div class="entrance">
-                            <button class="entrance-button">вход</button></div>
-                    </div>
+    <header class="header-top">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6">
+                    <ul class="nav-header">
+                        <li><a href="#">главная</a></li>
+                        <li><a class="h-line" href="#">о компании</a></li>
+                        <li><a href="#">ссылка 1</a></li>
+                        <li><a href="#">ссылка 2</a></li>
+                        <li><a href="#">ссылка 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="entrance">
+                        <button class="entrance-button">вход</button></div>
                 </div>
             </div>
         </div>
@@ -39,7 +37,7 @@
             <div class="row header-height">
                 <div class="col-3">
                     <div class="logo">
-                        <img src="../../Desktop/testWezom//images/logo.png" alt="">
+                        <img src="../../Desktop/testWezom//images/logo.png" alt="logo">
                     </div>
                 </div>
                 <div class="col-6">
@@ -56,7 +54,7 @@
                         <li class="header-actions-item">
                             <div class="header-actions-button-container">
                                 <button class="button-header-action"><img
-                                        src="../../Desktop/testWezom/images/compare-icon.png" alt="">
+                                        src="../../Desktop/testWezom/images/compare-icon.png" alt="compare">
                                     <div class="text-header-actions">сравнение</div>
                                 </button>
                             </div>
@@ -65,7 +63,7 @@
                         <li class="header-actions-item">
                             <div class="header-actions-button-container">
                                 <button class="button-header-action"><img
-                                        src="../../Desktop/testWezom/images/favorites.icon.png" alt="">
+                                        src="../../Desktop/testWezom/images/favorites.icon.png" alt="favorites">
                                     <div class="text-header-actions">избранное</div>
                                 </button>
                             </div>
@@ -73,11 +71,14 @@
                         <hr class="line">
                         <li class="header-actions-item">
                             <div class="header-actions-button-container">
-                                <button class="button-header-action"><img
-                                        src="../../Desktop/testWezom/images/cart-icon.png" alt="">
+                                <button class="button-header-action">
+                                    <div class="count-cart">
+                                        <img src="../../Desktop/testWezom/images/counter-icon.png" alt="counter">
+                                        <div class="counter-prod">5</div>
+                                    </div>
+                                    <img src="../../Desktop/testWezom/images/cart-icon.png" alt="cart">
                                     <div class="text-header-actions left">корзина</div>
                                 </button>
-
                             </div>
                         </li>
                     </ul>
@@ -86,6 +87,98 @@
         </div>
         </div>
     </header>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="top-nav">
+
+                        <li>меню <div class="burger">
+                               <div class="burger-el">
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                               </div>
+                            </div>
+                        </li>
+                        <li><a href="#">ссылка 1</a></li>
+                        <li><a href="#">ссылка 2</a></li>
+                        <li><a href="#">ссылка 3</a></li>
+                        <li><a href="#">ссылка 4</a></li>
+                        <li><a href="#">ссылка 5</a></li>
+                        <li><a href="#">ссылка 6</a></li>
+                        <li><a href="#">ссылка 7</a></li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="search-block">
+                                <form action="">
+                                    <input type="search" placeholder="Поиск по сайту">
+                                    <ul>
+                                        <li>все категории</li>
+                                    </ul>
+                                    <button type="submit">Поиск</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="block-filter">
+                                <form action="">
+                                    <ul class="link-products-categories" >
+                                        <li><a class="h-line" href="#">Ссылка1 <img src="../../Desktop/testWezom/images/passenger-car-icon.png" alt=""></a></li>
+                                        <li><a href="#">Ссылка2 <img src="../../Desktop/testWezom/images/cargo-car-icon.png" alt=""></a></li>
+                                        <li><a href="#">Ссылка3 <img src=" ../../Desktop/testWezom/images/rims-icon.png" alt=""></a></li>
+                                        <li><a href="#">Ссылка4 <img src=" ../../Desktop/testWezom/images/oil-icon.png" alt=""></a></li>
+                                        <li><a href="#">Ссылка5 <img src="../../Desktop/testWezom/images/bateria-icon.png" alt=""></a></li>
+                                    </ul>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="block-tabs">
+                                                <div class="tab first-tab">Tab 1</div>
+                                                <div class="tab second-tab">Tab 2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="block-select">
+                                                <ul class="list-select">
+                                                    <li>Select 1 <hr></li>
+                                                    <li>Select 2 <hr></li>
+                                                    <li>Select 3 <hr></li>
+                                                    <li>Select 4 <hr></li>
+                                                </ul>
+                                                <ul class="list-select">
+                                                    <li>Select 6<hr></li>
+                                                    <li> <input class="submit-select" type="submit" value="Цена"> 
+                                                        <input class="num-select" type="text"> 
+                                                        <input class="num-select" type="text"> <hr>
+                                                    </li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>o</li>
+                                                <li><input type="submit"> <input type="text"> <input type="text"></li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
