@@ -167,6 +167,9 @@
 .logo {
   display: flex;
 }
+.logo a {
+  display: flex;
+}
 
 .entrance {
   height: 99%;
@@ -283,7 +286,7 @@
 .top-nav li {
   position: relative;
   width: 325px;
-  height: 53px;
+  height: 57px;
   border: 1px solid #f1f1f1;
   display: block;
   border-bottom: none;
@@ -296,11 +299,12 @@
 .top-nav li:first-child {
   width: 264px;
   height: 56px;
-  background-color: #aaaaaa;
+  background-image: linear-gradient(to right, #ff8600, #ff9000, #ff9a00, #ffa400, #ffad00);
   color: #ffffff;
   margin-left: 61px;
   font-size: 20px;
   border: none;
+  text-indent: 20px;
 }
 .top-nav li:first-child::first-letter {
   text-transform: uppercase;
@@ -327,7 +331,7 @@
 .top-nav li .burger {
   height: 56px;
   width: 61px;
-  background-color: #858585;
+  background-color: #db7200;
   position: absolute;
   bottom: 0px;
   left: -61px;
@@ -361,7 +365,7 @@
 }
 
 .search-block {
-  height: 55px;
+  height: 56px;
   display: flex;
   flex-direction: row;
 }
@@ -380,6 +384,7 @@
   position: relative;
   width: 150px;
   background-color: #f5f5f5;
+  cursor: pointer;
 }
 .search-block ul::before {
   content: url(../../Desktop/testWezom/images/arrow.png);
@@ -387,13 +392,18 @@
   position: absolute;
   background-repeat: no-repeat;
   top: 18px;
-  left: 120px;
+  left: 115px;
+  cursor: pointer;
 }
 .search-block ul li {
-  line-height: 55px;
+  line-height: 37px;
   font-size: 14px;
   color: #616161;
   cursor: pointer;
+  border-left: 1px solid #dadada;
+  height: 40px;
+  margin-top: 10px;
+  text-indent: 10px;
 }
 .search-block ul li::first-letter {
   text-transform: uppercase;
@@ -409,6 +419,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .link-products-categories {
@@ -485,23 +496,6 @@
   justify-content: center;
   margin-bottom: 23px;
 }
-.block-select .num-select {
-  width: 75px;
-  margin-left: 15px;
-}
-.block-select .input-select {
-  width: 225px;
-  margin-left: 13px;
-}
-.block-select .submit-select {
-  width: 40px;
-  background-color: inherit;
-  outline: none;
-  border: none;
-  color: #ffffff;
-  font-size: 14px;
-  margin-left: 3px;
-}
 .block-select li {
   position: relative;
   width: 223px;
@@ -519,13 +513,81 @@
   position: absolute;
   background-repeat: no-repeat;
   top: 0px;
+  left: 180px;
+}
+
+.input-price:last-child {
+  background-color: inherit;
+}
+.input-price:last-child .submit-select {
+  height: 100%;
+  border: none;
+  outline: none;
+  background: inherit;
+  position: relative;
+  right: 14px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.input-price:last-child .num-select {
+  position: relative;
+  width: 75px;
+  height: 100%;
+  margin-left: 7px;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.input-price:last-child::before {
+  content: "";
+  color: #696969;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0px;
   left: 188px;
+}
+
+.buttons-form {
+  width: 946px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+.buttons-form button {
+  width: 212px;
+  height: 50px;
+}
+.buttons-form .clear-filter {
+  background-color: #ff4800;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url(../../Desktop/testWezom/images/clear-form-icon.png);
+  background-position: 37px center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-indent: 10px;
+  font-size: 14px;
+}
+.buttons-form .apply-filter {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #ff8600, #ff9000, #ff9a00, #ffa400, #ffad00);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+main {
+  height: 1000px;
 }
 
 body {
@@ -539,6 +601,255 @@ body {
 .container {
   width: 1360px;
   margin: 0 auto;
+}
+
+.product-top {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+.product-top .product-cards {
+  line-height: 80px;
+  font-size: 35px;
+}
+.product-top .link-to-catalog {
+  line-height: 80px;
+}
+.product-top .link-to-catalog a {
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+  right: 12px;
+}
+.product-top .link-to-catalog a img {
+  margin-bottom: 3px;
+}
+.product-top .link-to-catalog .arr-to-catalog {
+  position: relative;
+  left: 0px;
+  top: -3px;
+}
+.product-top .link-to-catalog .first-el-to-catalog {
+  position: relative;
+  left: 4px;
+  top: -4px;
+}
+
+.border-prod {
+  border-top: 2px solid #f1f1f1;
+  border-right: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+}
+.border-prod:last-child {
+  border-right: none;
+}
+
+.block-products {
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 315px;
+  margin: 0 auto;
+}
+
+.text-block {
+  width: 80px;
+  height: 25px;
+  background-color: #f2f2f2;
+  color: #8b8b8b;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.link-product {
+  margin-top: 22px;
+  height: 60px;
+}
+.link-product a {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+.link-product a:hover {
+  text-decoration: none;
+}
+
+.goots-tail-rating {
+  width: 60%;
+  display: inline-block;
+  margin-top: 17px;
+}
+.goots-tail-rating .prod-reviews {
+  margin-left: 5px;
+}
+.goots-tail-rating .prod-reviews a {
+  color: #9b9b9b;
+  font-size: 13px;
+}
+.goots-tail-rating .prod-reviews a:hover {
+  text-decoration: none;
+}
+
+.goods-tile-availability {
+  width: 35%;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.icon-picture {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+.icon-picture .icon-center {
+  margin-left: 8px;
+}
+.icon-picture img {
+  margin-top: 25px;
+}
+.icon-picture .text-icon-picture {
+  text-transform: uppercase;
+  color: #9b9b9b;
+  margin-top: 15px;
+  font-size: 10px;
+}
+
+.picture-prod {
+  width: 70%;
+  height: 250px;
+}
+.picture-prod img {
+  margin-top: 50px;
+}
+
+.goods-tile-picture {
+  display: flex;
+}
+
+.goods-tile-label {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.lable-prod {
+  position: relative;
+}
+
+.lable-prod-text {
+  position: absolute;
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  font-size: 10px;
+  color: #ffffff;
+  top: 13px;
+  left: 14px;
+  width: 68px;
+  text-align: center;
+}
+
+.goods-tile-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.old-price sub {
+  text-decoration: line-through;
+  color: #e00000;
+  font-weight: 600;
+  font-style: italic;
+}
+.old-price sub .old-price-text {
+  color: #989898;
+}
+
+.goods-tile-price {
+  height: 26px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.new-price sub {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+}
+.new-price .font-size-new-price {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.goods-prod-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.prod-button {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ffa400;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 210px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  background-image: url(../../Desktop/testWezom/images/cart-button-icon.png);
+  background-position: 25px center;
+  background-repeat: no-repeat;
+  text-indent: 40px;
+}
+
+.product-actions {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.product-compare {
+  display: flex;
+  align-items: center;
+}
+.product-compare a {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+}
+.product-compare a:hover {
+  text-decoration: none;
+}
+
+.product-favorites {
+  display: flex;
+  align-items: center;
+}
+.product-favorites a {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+}
+.product-favorites a:hover {
+  text-decoration: none;
+}
+
+.product-actions-item {
+  width: 50%;
+  display: inline-flex;
+  height: 50px;
+  align-items: center;
+}
+
+.position-block-favorite {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
