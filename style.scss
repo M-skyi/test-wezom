@@ -1,14 +1,11 @@
 @import"./mixins";
 @import"./variables";
 @import"./header.scss";
+@import"./footer.scss";
 * {
-
-	box-sizing: border-box;
+    box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-}
-main{
-    height: 1000px;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -55,9 +52,9 @@ body{
     }
 }
 .border-prod{
-    border-top: 2px solid  $color-border;
-    border-right: 2px solid $color-border;
-    border-bottom: 2px solid $color-border;
+    border-top: 1px solid  $color-border;
+    border-right: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
     &:last-child{
         border-right: none;  
     }
@@ -132,10 +129,13 @@ body{
     }
 }
 .picture-prod{
+    position: relative;
     width: 70%;
     height: 250px;
     img{
-        margin-top: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 }
 .goods-tile-picture{
@@ -195,15 +195,20 @@ body{
 
   }
   .goods-prod-button{
+      position: relative;
       display: $display-flex;
      justify-content: center;
      margin-top: 25px;
+     img{
+         position: absolute;
+         left: 79px;
+         top: 12px;
+         cursor: pointer;
+     }
   }
   .prod-button{
     text-transform: uppercase;
     color: #ffffff;
-    // background-image: linear-gradient(to right, #ff8600, #ff9000, #ff9a00, #ffa400, #ffad00);
-    background-color: #ffa400;
     border: none;
     outline: none;
     cursor: pointer;
@@ -211,8 +216,8 @@ body{
     height: 50px;
     font-size: 14px;
     font-weight: 600;
-    background-image: url(../../Desktop/testWezom/images/cart-button-icon.png);
-    background-position: 25px center;
+    background-image:linear-gradient(to right, #ff8600, #ff9000, #ff9a00, #ffa400, #ffad00);
+    background-color: #0806068e;
     background-repeat: no-repeat;
     text-indent: 40px;
 }
@@ -257,6 +262,24 @@ body{
     display: $display-flex;
     justify-content: flex-end;
 }
+.el-icon{
+    text-align: center;
+    width: 50px;
+    img{
+        text-align: center;
+    }
+}
+.line-text-product-cards{
+    height: 2px;
+    background-color: #ff8500;
+    width: 100%;
+    position: relative;
+    border: none;
+}
+.new-price{
+    color: #3b3b3b;
+}
+
 
 
 

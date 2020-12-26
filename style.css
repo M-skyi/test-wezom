@@ -580,14 +580,75 @@
   cursor: pointer;
 }
 
+.col-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.footer {
+  height: 340px;
+  background-color: #696969;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-}
-
-main {
-  height: 1000px;
 }
 
 body {
@@ -636,9 +697,9 @@ body {
 }
 
 .border-prod {
-  border-top: 2px solid #f1f1f1;
-  border-right: 2px solid #f1f1f1;
-  border-bottom: 2px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
 }
 .border-prod:last-child {
   border-right: none;
@@ -718,11 +779,14 @@ body {
 }
 
 .picture-prod {
+  position: relative;
   width: 70%;
   height: 250px;
 }
 .picture-prod img {
-  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .goods-tile-picture {
@@ -784,15 +848,21 @@ body {
 }
 
 .goods-prod-button {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 25px;
+}
+.goods-prod-button img {
+  position: absolute;
+  left: 79px;
+  top: 12px;
+  cursor: pointer;
 }
 
 .prod-button {
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #ffa400;
   border: none;
   outline: none;
   cursor: pointer;
@@ -800,8 +870,8 @@ body {
   height: 50px;
   font-size: 14px;
   font-weight: 600;
-  background-image: url(../../Desktop/testWezom/images/cart-button-icon.png);
-  background-position: 25px center;
+  background-image: linear-gradient(to right, #ff8600, #ff9000, #ff9a00, #ffa400, #ffad00);
+  background-color: #0806068e;
   background-repeat: no-repeat;
   text-indent: 40px;
 }
@@ -850,6 +920,26 @@ body {
 .position-block-favorite {
   display: flex;
   justify-content: flex-end;
+}
+
+.el-icon {
+  text-align: center;
+  width: 50px;
+}
+.el-icon img {
+  text-align: center;
+}
+
+.line-text-product-cards {
+  height: 2px;
+  background-color: #ff8500;
+  width: 100%;
+  position: relative;
+  border: none;
+}
+
+.new-price {
+  color: #3b3b3b;
 }
 
 /*# sourceMappingURL=style.css.map */
