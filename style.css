@@ -170,9 +170,6 @@
 .logo a {
   display: flex;
 }
-.logo a img {
-  margin-top: -3px;
-}
 
 .entrance {
   height: 99%;
@@ -1278,6 +1275,10 @@ footer {
   position: relative;
   transform: rotate(-45deg);
   top: 50%;
+}
+
+.modal-enter {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
