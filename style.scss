@@ -1,7 +1,6 @@
 @import"./mixins";
 @import"./variables";
 @import"./header.scss";
-@import"./footer.scss";
 * {
     box-sizing: border-box;
 	margin: 0px;
@@ -270,7 +269,7 @@ body{
     }
 }
 .line-text-product-cards{
-    height: 2px;
+    height: 1px;
     background-color: #ff8500;
     width: 100%;
     position: relative;
@@ -279,7 +278,110 @@ body{
 .new-price{
     color: #3b3b3b;
 }
+footer{
+    margin-top: 63px;
+    height: 700px;
+    background-color: $color-header-footer;
+}
+.block-text{
+    font-size: 20px;
+    color: #cbcbcb;
+    margin-top: 37px;
+    margin-bottom: -1px;
+    margin-left: 20px;
+    &:first-child{
+        margin-left: 0px;
+    }
+}
+.block-content{
+    width: fit-content;
+    border-top: 1px solid #7a7a7a;
+    margin-bottom: 40px;
+    .first-text{
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #cbcbcb;
+        display: block;
+        margin-top: 35px;
+        font-weight: 600;
+    }
+    .second-text{
+        font-size: 26px;
+        text-transform: uppercase;
+        color:#ffffff;
+        display: block;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+}
+.block-subscription{
+    margin-top: 20px;
+    .email-field{
+        width: 405px;
+        height: 50px;
+        border: none;
+        outline: none;
+        margin-right: -4px;
+        padding-right: 20px;
+        text-indent: 30px;
+        font-weight: 600;
+        color: #d1d1d1;
+    }
+    .email-field-button{
+        width: 170px;
+        height: 50px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #ff8900;
+        margin-top: -3px;
+    }
+    .email-field-footer{
+        margin-top: 20px;
+    }
+}
+.right-block-foter{
+    display: $display-flex;
+}
+.width-line-long{
+        width: 136px;
+        border: none;
+        height: 1px;
+        background-color: #ff8500;
+        margin-top: 18px;
+        position: relative;  
+}
+.width-line-short{
+        width: 59px;
+        border: none;
+        height: 1px;
+        background-color: #ff8500;
+        margin-top: 18px;
+        position: relative;  
+}
+.nav-footer{
+    width: 210px;
+    border-top: 1px solid #7a7a7a ;
+    margin-top: -1px;
+    li{
+        margin-bottom: 20px;
+        a{
+            color: #ffffff;
+            font-size: 13px;
+            text-decoration: none; border-bottom:2px solid #989898; 
+        }
+        &:first-child{
+            margin-top: 30px;
+           }
 
+    }
+  
+}
+.footer-border{
+    border-bottom: 1px solid #7a7a7a;
+}
 
 
 

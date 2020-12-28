@@ -65,6 +65,9 @@
     display: $display-flex;
     a{
         display: flex;
+        img{
+            margin-top: -3px;
+        }
     }
 }
 
@@ -79,13 +82,13 @@
         width: 125px;
         outline: none;
         border: none;
-        font-size: $font-size-menu;
+        font-size: 11px;
         text-transform: uppercase;
         color: $text-buttons-color;
         background-image: url(../../Desktop/testWezom/images/entrace-icon.png);
         background-repeat: no-repeat;
-        background-position: center left 35px;
-        text-indent: 35px;
+        background-position: center left 37px;
+        text-indent: 31px;
         background-color: $color-buttons;
         cursor: pointer;
     }
@@ -101,11 +104,12 @@
         height: 50px;
         background-color: $inputs-color;
         border: none;
-        margin: -1px -24px 0px 0px;
-        text-indent: 20px;
+        margin: -1px -24px 1px 0px;
+        text-indent: 17px;
         outline: none;
-        font-weight: 600;
         width: 209px;
+        font-weight: 800;
+        width: 202px;
 
     }
 
@@ -131,6 +135,7 @@
         background-color: $color-buttons;
         text-indent: 0px;
         font-size: $font-size-menu;
+        font-weight: 100;
         color: $text-buttons-color;
         text-transform: uppercase;
         margin-top: 1px;
@@ -166,7 +171,9 @@
     border: none;
     outline: none;
     cursor: pointer;
-    margin-top: 7px;
+}
+.header-actions-button-container{
+    margin: 3px -1px;
 }
 
 .line {
@@ -196,15 +203,24 @@
 }
 
 .top-nav {
+    
     li {
         position: relative;
         width: 325px;
-        height: 57px;
+        height: 56px;
         border: 1px solid $color-border;
         display: block;
         border-bottom: none;
-        line-height: 53px;
         text-indent: 40px;
+        display: flex;
+        align-items: center;
+        margin: -2px -1px;
+        &:nth-child(2){
+            height: 65px;
+            a{
+                margin-top: 19px;
+            }
+        }
 
         &:last-child {
             border: 1px solid $color-border;
@@ -219,6 +235,7 @@
             font-size: 20px;
             border: none;
             text-indent: 20px;
+            margin: 1px 60px;
 
             &::first-letter {
                 text-transform: uppercase;
@@ -227,14 +244,16 @@
 
         a {
             position: relative;
-            display: block;
-            height: 100%;
             width: 100%;
             text-decoration: none;
             font-weight: 600;
             font-size: 16px;
             color: $color-black;
             text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin-top: 11px;
 
             &::after {
                 content: url(../../Desktop/testWezom/images/arr.png);
@@ -242,7 +261,7 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 color: #ffffff;
-                margin-left: 110px;
+                margin-left: 243px;
 
             }
         }
@@ -307,7 +326,8 @@
             background-color: $inputs-color;
             border: none;
             outline: none;
-            text-indent: 28px;
+            text-indent: 34px;
+            font-size: 14px;
         }
         
     }

@@ -4,11 +4,6 @@
         max-width: percentage($i/12);
     }  
 }
-@mixin flexCenter($content) {
-    display: flex;
-    justify-content: $content;
-    align-items: center;
-}
 
 
 

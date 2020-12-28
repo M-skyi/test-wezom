@@ -170,6 +170,9 @@
 .logo a {
   display: flex;
 }
+.logo a img {
+  margin-top: -3px;
+}
 
 .entrance {
   height: 99%;
@@ -182,13 +185,13 @@
   width: 125px;
   outline: none;
   border: none;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   color: #ffffff;
   background-image: url(../../Desktop/testWezom/images/entrace-icon.png);
   background-repeat: no-repeat;
-  background-position: center left 35px;
-  text-indent: 35px;
+  background-position: center left 37px;
+  text-indent: 31px;
   background-color: #ff8900;
   cursor: pointer;
 }
@@ -202,11 +205,12 @@
   height: 50px;
   background-color: #f5f5f5;
   border: none;
-  margin: -1px -24px 0px 0px;
-  text-indent: 20px;
+  margin: -1px -24px 1px 0px;
+  text-indent: 17px;
   outline: none;
-  font-weight: 600;
   width: 209px;
+  font-weight: 800;
+  width: 202px;
 }
 .call-back ::-webkit-input-placeholder {
   color: #000000;
@@ -225,6 +229,7 @@
   background-color: #ff8900;
   text-indent: 0px;
   font-size: 12px;
+  font-weight: 100;
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 1px;
@@ -256,7 +261,10 @@
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 7px;
+}
+
+.header-actions-button-container {
+  margin: 3px -1px;
 }
 
 .line {
@@ -286,12 +294,20 @@
 .top-nav li {
   position: relative;
   width: 325px;
-  height: 57px;
+  height: 56px;
   border: 1px solid #f1f1f1;
   display: block;
   border-bottom: none;
-  line-height: 53px;
   text-indent: 40px;
+  display: flex;
+  align-items: center;
+  margin: -2px -1px;
+}
+.top-nav li:nth-child(2) {
+  height: 65px;
+}
+.top-nav li:nth-child(2) a {
+  margin-top: 19px;
 }
 .top-nav li:last-child {
   border: 1px solid #f1f1f1;
@@ -305,20 +321,23 @@
   font-size: 20px;
   border: none;
   text-indent: 20px;
+  margin: 1px 60px;
 }
 .top-nav li:first-child::first-letter {
   text-transform: uppercase;
 }
 .top-nav li a {
   position: relative;
-  display: block;
-  height: 100%;
   width: 100%;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
   color: #000000;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 11px;
 }
 .top-nav li a::after {
   content: url(../../Desktop/testWezom/images/arr.png);
@@ -326,7 +345,7 @@
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
-  margin-left: 110px;
+  margin-left: 243px;
 }
 .top-nav li .burger {
   height: 56px;
@@ -378,7 +397,8 @@
   background-color: #f5f5f5;
   border: none;
   outline: none;
-  text-indent: 28px;
+  text-indent: 34px;
+  font-size: 14px;
 }
 .search-block ul {
   position: relative;
@@ -578,71 +598,6 @@
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.col-1 {
-  flex: 0 0 8.3333333333%;
-  max-width: 8.3333333333%;
-}
-
-.col-2 {
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%;
-}
-
-.col-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.col-4 {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%;
-}
-
-.col-5 {
-  flex: 0 0 41.6666666667%;
-  max-width: 41.6666666667%;
-}
-
-.col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.col-7 {
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%;
-}
-
-.col-8 {
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%;
-}
-
-.col-9 {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
-.col-10 {
-  flex: 0 0 83.3333333333%;
-  max-width: 83.3333333333%;
-}
-
-.col-11 {
-  flex: 0 0 91.6666666667%;
-  max-width: 91.6666666667%;
-}
-
-.col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.footer {
-  height: 340px;
-  background-color: #696969;
 }
 
 * {
@@ -931,7 +886,7 @@ body {
 }
 
 .line-text-product-cards {
-  height: 2px;
+  height: 1px;
   background-color: #ff8500;
   width: 100%;
   position: relative;
@@ -940,6 +895,118 @@ body {
 
 .new-price {
   color: #3b3b3b;
+}
+
+footer {
+  margin-top: 63px;
+  height: 700px;
+  background-color: #696969;
+}
+
+.block-text {
+  font-size: 20px;
+  color: #cbcbcb;
+  margin-top: 37px;
+  margin-bottom: -1px;
+  margin-left: 20px;
+}
+.block-text:first-child {
+  margin-left: 0px;
+}
+
+.block-content {
+  width: fit-content;
+  border-top: 1px solid #7a7a7a;
+  margin-bottom: 40px;
+}
+.block-content .first-text {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #cbcbcb;
+  display: block;
+  margin-top: 35px;
+  font-weight: 600;
+}
+.block-content .second-text {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.block-subscription {
+  margin-top: 20px;
+}
+.block-subscription .email-field {
+  width: 405px;
+  height: 50px;
+  border: none;
+  outline: none;
+  margin-right: -4px;
+  padding-right: 20px;
+  text-indent: 30px;
+  font-weight: 600;
+  color: #d1d1d1;
+}
+.block-subscription .email-field-button {
+  width: 170px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff8900;
+  margin-top: -3px;
+}
+.block-subscription .email-field-footer {
+  margin-top: 20px;
+}
+
+.right-block-foter {
+  display: flex;
+}
+
+.width-line-long {
+  width: 136px;
+  border: none;
+  height: 1px;
+  background-color: #ff8500;
+  margin-top: 18px;
+  position: relative;
+}
+
+.width-line-short {
+  width: 59px;
+  border: none;
+  height: 1px;
+  background-color: #ff8500;
+  margin-top: 18px;
+  position: relative;
+}
+
+.nav-footer {
+  width: 210px;
+  border-top: 1px solid #7a7a7a;
+  margin-top: -1px;
+}
+.nav-footer li {
+  margin-bottom: 20px;
+}
+.nav-footer li a {
+  color: #ffffff;
+  font-size: 13px;
+  text-decoration: none;
+  border-bottom: 2px solid #989898;
+}
+.nav-footer li:first-child {
+  margin-top: 30px;
+}
+
+.footer-border {
+  border-bottom: 1px solid #7a7a7a;
 }
 
 /*# sourceMappingURL=style.css.map */
