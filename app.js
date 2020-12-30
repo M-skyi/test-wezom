@@ -47,6 +47,7 @@ callBackButton.addEventListener("click", function (e) {
     }
 })
 
+
 for (let i = 0; i < btnCloseForm.length; i++) {
 
     btnCloseForm[i].addEventListener("click", function (e) {
