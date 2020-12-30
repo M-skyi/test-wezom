@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +21,7 @@
                 <div class="col-6">
                     <ul class="nav-header">
                         <li><a href="#">главная</a></li>
-                        <li><a class="h-line" href="#">о компании</a></li>
+                        <li><a href="#">о компании</a></li>
                         <li><a href="#">ссылка 1</a></li>
                         <li><a href="#">ссылка 2</a></li>
                         <li><a href="#">ссылка 3</a></li>
@@ -56,8 +55,7 @@
                     <ul class="header-actions">
                         <li class="header-actions-item">
                             <div class="header-actions-button-container">
-                                <button class="button-header-action"><img
-                                        src="images/compare-icon.png" alt="compare">
+                                <button class="button-header-action"><img src="images/compare-icon.png" alt="compare">
                                     <div class="text-header-actions">сравнение</div>
                                 </button>
                             </div>
@@ -65,8 +63,8 @@
                         <hr class="line">
                         <li class="header-actions-item">
                             <div class="header-actions-button-container">
-                                <button class="button-header-action"><img
-                                        src="images/favorites.icon.png" alt="favorites">
+                                <button class="button-header-action"><img src="images/favorites.icon.png"
+                                        alt="favorites">
                                     <div class="text-header-actions">избранное</div>
                                 </button>
                             </div>
@@ -120,7 +118,12 @@
                                 <form action="">
                                     <input type="search" placeholder="Поиск по сайту">
                                     <ul>
-                                        <li>все категории</li>
+                                        <li>
+                                            <select name="" id="">
+                                                <option>Все категории</option>
+                                                <option>0</option>
+                                            </select>
+                                        </li>
                                     </ul>
                                     <button type="submit">Поиск</button>
                                 </form>
@@ -132,18 +135,13 @@
                             <div class="block-filter">
                                 <form action="">
                                     <ul class="link-products-categories">
-                                        <li><a class="h-line" href="#">Ссылка1 <img
-                                                    src="images/passenger-car-icon.png"
-                                                    alt=""></a></li>
-                                        <li><a href="#">Ссылка2 <img
-                                                    src="images/cargo-car-icon.png" alt=""></a>
+                                        <li><a href="#">Ссылка1 <img src="images/passenger-car-icon.png" alt=""></a>
                                         </li>
-                                        <li><a href="#">Ссылка3 <img src=" images/rims-icon.png"
-                                                    alt=""></a></li>
-                                        <li><a href="#">Ссылка4 <img src="images/oil-icon.png"
-                                                    alt=""></a></li>
-                                        <li><a href="#">Ссылка5 <img
-                                                    src="images/bateria-icon.png" alt=""></a>
+                                        <li><a href="#">Ссылка2 <img src="images/cargo-car-icon.png" alt=""></a>
+                                        </li>
+                                        <li><a href="#">Ссылка3 <img src=" images/rims-icon.png" alt=""></a></li>
+                                        <li><a href="#">Ссылка4 <img src="images/oil-icon.png" alt=""></a></li>
+                                        <li><a href="#">Ссылка5 <img src="images/bateria-icon.png" alt=""></a>
                                         </li>
                                     </ul>
                                     <div class="row">
@@ -158,22 +156,90 @@
                                         <div class="col-12">
                                             <div class="block-select">
                                                 <ul class="list-select">
-                                                    <li>Select 1
-                                                        <hr>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 1</option>
+                                                            <option>0</option>
+                                                        </select>
                                                     </li>
-                                                    <li>Select 2
-                                                        <hr>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 2</option>
+                                                            <option>0</option>
+                                                        </select>
                                                     </li>
-                                                    <li>Select 3
-                                                        <hr>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 3</option>
+                                                            <option>0</option>
+                                                        </select>
                                                     </li>
-                                                    <li>Select 4
-                                                        <hr>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 4</option>
+                                                            <option>0</option>
+                                                        </select>
                                                     </li>
                                                 </ul>
                                                 <ul class="list-select ">
-                                                    <li>Select 6
-                                                        <hr>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 5</option>
+                                                            <option>0</option>
+                                                        </select>
+                                                    </li>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 6</option>
+                                                            <option>0</option>
+                                                        </select>
+                                                    </li>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 7</option>
+                                                            <option>0</option>
+                                                        </select>
+                                                    </li>
+                                                    <li class="input-price">
+                                                        <input class="submit-select" type="submit" value="Цена">
+                                                        <input class="num-select" type="text" placeholder="50">
+                                                        <input class="num-select" type="text" placeholder="250000">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="block-select">
+                                                <ul class="list-select">
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 1</option>
+                                                            <option>0</option>
+                                                        </select>
+                                                    </li>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 2</option>
+                                                            <option>0</option>
+                                                        </select>
+                                                    </li>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 3</option>
+                                                            <option>0</option>
+                                                        </select>
+                                                    </li>
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 4</option>
+                                                            <option>0</option>
+                                                        </select>
+                                                    </li>
+                                                </ul>
+                                                <ul class="list-select ">
+                                                    <li>
+                                                        <select name="" id="">
+                                                            <option>Select 5</option>
+                                                            <option>0</option>
+                                                        </select>
                                                     </li>
                                                     <li class="input-price">
                                                         <input class="submit-select" type="submit" value="Цена">
@@ -211,8 +277,7 @@
                         </div>
                         <div class="link-to-catalog">
                             <a href="#">Ссылка в каталог </a>
-                            <img class="first-el-to-catalog" src="images/Shape-22-icon.png"
-                                alt="">
+                            <img class="first-el-to-catalog" src="images/Shape-22-icon.png" alt="">
                             <img class="arr-to-catalog" src="images/Shape-23-icon.png" alt="">
                         </div>
                     </div>
@@ -234,7 +299,7 @@
                                         FA 12 Readymix 1 л Concentrat, Germany</a>
                                 </div>
                             </div>
-                            <div class="goots-tail-rating">
+                            <div class="goods-tail-rating">
                                 <span><img src="images/star-rating.png" alt=""></span>
                                 <span><img src="images/star-rating.png" alt=""></span>
                                 <span><img src="images/star-rating.png" alt=""></span>
@@ -258,21 +323,21 @@
                                         <span class="text-icon-picture icon-center">новая</span>
                                     </div>
                                 </div>
-                                <div class="picture-prod">
-                                    <img src="images/tire-picture.png" alt="">
-                                </div>
+
+                                <img class="product-picture" src="images/tire-picture.png" alt="">
+
                             </div>
                             <div class="goods-tile-label">
-                                <div class="lable-prod">
-                                    <div class="lable-prod-text">новинка</div>
+                                <div class="label-prod">
+                                    <div class="label-prod-text">новинка</div>
                                     <img src="images/new-label-icon.png" alt="">
                                 </div>
-                                <div class="lable-prod">
-                                    <div class="lable-prod-text">хит</div>
+                                <div class="label-prod">
+                                    <div class="label-prod-text">хит</div>
                                     <img src="images/hit-label-icon.png" alt="">
                                 </div>
-                                <div class="lable-prod">
-                                    <div class="lable-prod-text">скидка</div>
+                                <div class="label-prod">
+                                    <div class="label-prod-text">скидка</div>
                                     <img src="images/discound-label-icon.png" alt="">
                                 </div>
                             </div>
@@ -321,7 +386,7 @@
                                     FA 12 Readymix 1 л Concentrat, Germany</a>
                             </div>
                         </div>
-                        <div cl
+                        <div class="goods-tail-rating">
                             <span><img src="images/star-rating.png" alt=""></span>
                             <span><img src="images/star-rating.png" alt=""></span>
                             <span><img src="images/star-rating.png" alt=""></span>
@@ -337,28 +402,28 @@
                                     <span class="text-icon-picture">летняя</span>
                                 </div>
                                 <div class="el-icon">
+                                    <img src="images/passenger-car-prod-icon.png" alt="">
+                                    <span class="text-icon-picture">лековая</span>
+                                </div>
+                                <div class="el-icon">
                                     <img src="images/icon-label-new.png" alt="">
                                     <span class="text-icon-picture icon-center">новая</span>
                                 </div>
-                                <div class="el-icon">
+                            </div>
 
-                                </div>
-                            </div>
-                            <div class="picture-prod">
-                                <img src="images/prod-2.png" alt="">
-                            </div>
+                            <img class="product-picture" src="images/prod-2.png" alt="">
                         </div>
                         <div class="goods-tile-label">
-                            <div class="lable-prod">
-                                <div class="lable-prod-text">новинка</div>
+                            <div class="label-prod">
+                                <div class="label-prod-text">новинка</div>
                                 <img src="images/new-label-icon.png" alt="">
                             </div>
-                            <div class="lable-prod">
-                                <div class="lable-prod-text">хит</div>
+                            <div class="label-prod">
+                                <div class="label-prod-text">хит</div>
                                 <img src="images/hit-label-icon.png" alt="">
                             </div>
-                            <div class="lable-prod">
-                                <div class="lable-prod-text"></div>
+                            <div class="label-prod">
+                                <div class="label-prod-text"></div>
                                 <img src="" alt="">
                             </div>
                         </div>
@@ -406,7 +471,7 @@
                                     FA 12 Readymix 1 л Concentrat, Germany</a>
                             </div>
                         </div>
-                        <div class="goots-tail-rating">
+                        <div class="goods-tail-rating">
                             <span><img src="images/start-rating-icon.png" alt=""></span>
                             <span><img src="images/start-rating-icon.png" alt=""></span>
                             <span><img src="images/start-rating-icon.png" alt=""></span>
@@ -430,21 +495,20 @@
                                     <span class="text-icon-picture icon-center">новая</span>
                                 </div>
                             </div>
-                            <div class="picture-prod">
-                                <img src="images/prod-1.png" alt="">
-                            </div>
+
+                            <img class="product-picture" src="images/prod-1.png" alt="">
                         </div>
                         <div class="goods-tile-label">
-                            <div class="lable-prod">
-                                <div class="lable-prod-text">новинка</div>
+                            <div class="label-prod">
+                                <div class="label-prod-text">новинка</div>
                                 <img src="images/new-label-icon.png" alt="">
                             </div>
-                            <div class="lable-prod">
-                                <div class="lable-prod-text"></div>
+                            <div class="label-prod">
+                                <div class="label-prod-text"></div>
                                 <img src="" alt="">
                             </div>
-                            <div class="lable-prod">
-                                <div class="lable-prod-text">новинка</div>
+                            <div class="label-prod">
+                                <div class="label-prod-text">новинка</div>
                                 <img src="" alt="">
                             </div>
                         </div>
@@ -491,7 +555,7 @@
                                 <a href="#">Антифриз Fosser Antifreeze </a>
                             </div>
                         </div>
-                        <div class="goots-tail-rating">
+                        <div class="goods-tail-rating">
                             <span><img src="images/star-rating.png" alt=""></span>
                             <span><img src="images/star-rating.png" alt=""></span>
                             <span><img src="images/star-rating.png" alt=""></span>
@@ -511,24 +575,24 @@
                                     <span class="text-icon-picture">лековая</span>
                                 </div>
                                 <div class="el-icon">
-
+                                    <img src="images/icon-label-new.png" alt="">
+                                    <span class="text-icon-picture icon-center">новая</span>
                                 </div>
                             </div>
-                            <div class="picture-prod">
-                                <img src="images/prod-3.png" alt="">
-                            </div>
+
+                            <img class="product-picture" src="images/prod-3.png" alt="">
                         </div>
                         <div class="goods-tile-label">
-                            <div class="lable-prod">
-                                <div class="lable-prod-text"></div>
+                            <div class="label-prod">
+                                <div class="label-prod-text"></div>
                                 <img src="" alt="">
                             </div>
-                            <div class="lable-prod">
-                                <div class="lable-prod-text"></div>
+                            <div class="label-prod">
+                                <div class="label-prod-text"></div>
                                 <img src="" alt="">
                             </div>
-                            <div class="lable-prod">
-                                <div class="lable-prod-text">новинка</div>
+                            <div class="label-prod">
+                                <div class="label-prod-text">новинка</div>
                                 <img src="" alt="">
                             </div>
                         </div>
@@ -576,9 +640,11 @@
                                 <span class="first-text">Будьте в курсе новостей и новинок!</span>
                                 <span class="second-text">Подписывайтесь на рассылку</span>
                                 <div class="email-field-footer">
-                                    <input class="email-field" type="text"
-                                        placeholder="Укажите свой email для подписки">
-                                    <input class="email-field-button" type="submit" value="подписаться">
+                                    <form action="">
+                                        <input class="email-field" type="text"
+                                            placeholder="Укажите свой email для подписки">
+                                        <input class="email-field-button" type="submit" value="подписаться">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -672,7 +738,7 @@
                         <input class="input-password" type="password" placeholder="*************">
 
                         <input class="remember-me" type="checkbox" id="chec-remember">
-						<label class="remember-chec" for="chec-remember">Запомнить меня</label>
+                        <label class="remember-chec" for="chec-remember">Запомнить меня</label>
 
                         <div class="link-form">
                             <a href="">Забыли пароль?</a>
@@ -684,8 +750,8 @@
                 </div>
                 <div class="col-6">
                     <div class="close-modal-btn">
-                        <span></span>
-                        <span></span>
+                        <span class="el-close-modal-btn"></span>
+                        <span class="el-close-modal-btn"></span>
                     </div>
                     <div class="container-enter-form">
                         <p class="headline-form">Войти с ппомощью</p>
@@ -706,6 +772,26 @@
                     </div>
                 </div>
             </div>
+        </form>
+    </div>
+    <div class="modal-call-back">
+   <form action="">
+            <div class="close-modal-btn">
+                <span class="el-close-modal-btn"></span>
+                <span class="el-close-modal-btn"></span>
+            </div>
+            <div class="container-enter-form">
+                <div class="headline-form-call-back">
+                    Перезвоните мне
+                </div>
+                <p class="frorm-call-back-text-input">Номер телефона</p>
+                <input class="frorm-call-back-input-phone" type="phone" placeholder="+38(0__) ___ - __ - __">
+                <div class="btn-call-back-send">
+                <input class="button-form-call-back-input-send" type="submit" value="Перезвоните мне">
+                <div>
+            </div>
+
+
         </form>
     </div>
 
