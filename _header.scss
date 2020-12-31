@@ -668,3 +668,11 @@
     }
 
 }
+@media(max-width: 1440px){
+    .header-top {
+        line-height: 50px;
+        height: 100%;
+        background: linear-gradient(to bottom, $color-header-footer 29%, transparent 29%);
+        width: fit-content;
+    }
+}

@@ -875,3 +875,10 @@ footer {
     display: $display-flex;
     justify-content: center;
 }
+@media(max-width: 1440px){
+    footer {
+        margin-top: 63px;
+        background-color: $color-header-footer;
+        width: fit-content;
+    }
+}

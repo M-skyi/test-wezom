@@ -677,6 +677,14 @@
   background: linear-gradient(90deg, #ff8600 0%, rgba(255, 111, 0, 0.9836309524) 100%);
 }
 
+@media (max-width: 1440px) {
+  .header-top {
+    line-height: 50px;
+    height: 100%;
+    background: linear-gradient(to bottom, #696969 29%, transparent 29%);
+    width: fit-content;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -1467,6 +1475,14 @@ footer {
 .btn-call-back-send {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1440px) {
+  footer {
+    margin-top: 63px;
+    background-color: #696969;
+    width: fit-content;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
