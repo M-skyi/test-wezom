@@ -7,6 +7,7 @@ let callBackForm = document.querySelector(".modal-call-back")
 let tabContent = document.querySelectorAll(".block-select")
 let tabs = document.querySelectorAll(".tab")
 let tabsWrap = document.querySelector(".block-tabs")
+
 function hideTabsContent() {
     tabContent.forEach(item => {
         item.style.display = "none"
@@ -15,17 +16,18 @@ function hideTabsContent() {
         item.classList.remove("tab-active")
     })
 }
+
 function showTabsContent(i = 0) {
     tabContent[i].style.display = "block"
     tabs[i].classList.add("tab-active");
 }
-hideTabsContent() 
+hideTabsContent()
 showTabsContent()
 
-tabsWrap.addEventListener("click",function (e) {
+tabsWrap.addEventListener("click", function (e) {
     let target = e.target
     if (target && target.classList.contains("tab")) {
-        tabs.forEach((item,i) => {
+        tabs.forEach((item, i) => {
             if (target == item) {
                 hideTabsContent()
                 showTabsContent(i)
