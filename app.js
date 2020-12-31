@@ -46,9 +46,8 @@ callBackButton.addEventListener("click", function (e) {
         callBackForm.classList.add("modal-call-back-active")
     }
 })
-
-
 for (let i = 0; i < btnCloseForm.length; i++) {
+    console.log(btnCloseForm[i])
 
     btnCloseForm[i].addEventListener("click", function (e) {
         let target = e.target

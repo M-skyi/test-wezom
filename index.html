@@ -47,7 +47,7 @@
                         <form action="">
                             <input type="phone" placeholder="+380 98 170 00 740">
                             <input type="phone" placeholder="+380 98 170 00 740">
-                            <input class="button-call-back" type="submit" value="перезвонить мне ">
+                            <input class="button-call-back" type="button" value="перезвонить мне">
                         </form>
                     </div>
                 </div>
@@ -201,7 +201,7 @@
                                                         </select>
                                                     </li>
                                                     <li class="input-price">
-                                                        <input class="submit-select" type="submit" value="Цена">
+                                                        <div class="text-select">Цена</div>
                                                         <input class="num-select" type="text" placeholder="50">
                                                         <input class="num-select" type="text" placeholder="250000">
                                                     </li>
@@ -242,7 +242,7 @@
                                                         </select>
                                                     </li>
                                                     <li class="input-price">
-                                                        <input class="submit-select" type="submit" value="Цена">
+                                                        <div class="text-select">Цена</div>
                                                         <input class="num-select" type="text" placeholder="50">
                                                         <input class="num-select" type="text" placeholder="250000">
                                                     </li>
@@ -343,12 +343,12 @@
                             </div>
                             <div class="goods-tile-price">
                                 <div class="new-price">
-                                    <sub><span class="new-price-text">599 </span></sub>
-                                    <sup><span class="font-size-new-price">ГРН.</span></sup>
+                                    <span class="new-price-text">599 </span>
+                                    <span class="font-size-new-price">ГРН.</span>
                                 </div>
                                 <div class="old-price">
-                                    <sub><span class="old-price-text">1 250</span></sub>
-                                    <sub><span class="old-price-text">ГРН.</span></sub>
+                                    <span class="old-price-text">1 250</span>
+                                    <span class="old-price-text">ГРН.</span>
                                 </div>
                             </div>
                             <div class="goods-prod-button">
@@ -402,8 +402,6 @@
                                     <span class="text-icon-picture">летняя</span>
                                 </div>
                                 <div class="el-icon">
-                                    <img src="images/passenger-car-prod-icon.png" alt="">
-                                    <span class="text-icon-picture">лековая</span>
                                 </div>
                                 <div class="el-icon">
                                     <img src="images/icon-label-new.png" alt="">
@@ -429,12 +427,12 @@
                         </div>
                         <div class="goods-tile-price">
                             <div class="new-price">
-                                <sub><span class="new-price-text">599 </span></sub>
-                                <sup><span class="font-size-new-price">ГРН.</span></sup>
+                                <span class="new-price-text">599 </span>
+                                <span class="font-size-new-price">ГРН.</span>
                             </div>
                             <div class="old-price">
-                                <sub><span class="old-price-text">1 250</span></sub>
-                                <sub><span class="old-price-text">ГРН.</span></sub>
+                                <span class="old-price-text">1 250</span>
+                                <span class="old-price-text">ГРН.</span>
                             </div>
                         </div>
                         <div class="goods-prod-button">
@@ -514,12 +512,12 @@
                         </div>
                         <div class="goods-tile-price">
                             <div class="new-price">
-                                <sub><span class="new-price-text">9 570</span></sub>
-                                <sup><span class="font-size-new-price">ГРН.</span></sup>
+                                <span class="new-price-text">9 570</span>
+                                <span class="font-size-new-price">ГРН.</span>
                             </div>
                             <div class="old-price">
-                                <sub><span class="old-price-text">11 250</span></sub>
-                                <sub><span class="old-price-text">ГРН.</span></sub>
+                                <span class="old-price-text">11 250</span>
+                                <span class="old-price-text">ГРН.</span>
                             </div>
                         </div>
                         <div class="goods-prod-button">
@@ -575,8 +573,6 @@
                                     <span class="text-icon-picture">лековая</span>
                                 </div>
                                 <div class="el-icon">
-                                    <img src="images/icon-label-new.png" alt="">
-                                    <span class="text-icon-picture icon-center">новая</span>
                                 </div>
                             </div>
 
@@ -598,21 +594,23 @@
                         </div>
                         <div class="goods-tile-price">
                             <div class="new-price">
-                                <sub><span class="new-price-text">599 </span></sub>
-                                <sup><span class="font-size-new-price">ГРН.</span></sup>
+                                <span class="new-price-text">599 </span>
+                                <span class="font-size-new-price">ГРН.</span>
                             </div>
                             <div class="old-price">
-                                <sub><span class="old-price-text"></span></sub>
-                                <sub><span class="old-price-text"></span></sub>
+                                <span class="old-price-text"></span>
+                                <span class="old-price-text"></span>
                             </div>
                         </div>
                         <div class="goods-prod-button">
                             <img src="images/cart-button-icon.png" alt="">
-                            <button class="apply-filter prod-button">купить товар</button>
-                            <img src="images/cart-button-icon.png" alt="">
+                            <button class="apply-filter prod-button btn-img">купить товар</button>
+
+
                         </div>
                         <div class="product-actions">
                             <div class="product-actions-item">
+                                <img src="images/compare-prod-icon.png" alt="">
                                 <div class="product-compare"><a href="#">Сравнить товар</a> </div>
                             </div>
                             <div class="product-actions-item position-block-favorite">
@@ -715,7 +713,9 @@
                         </div>
                         <div class="text-lable">
                             <p class="first-text-lable">Разработка тестового</p>
-                            <p class="second-text-lable">Wezom Agency</p>
+                            <p class="second-text-lable">
+                                <a href="#">Wezom Agency</a>
+                            </p>
                         </div>
 
                     </div>
@@ -775,7 +775,7 @@
         </form>
     </div>
     <div class="modal-call-back">
-   <form action="">
+        <form action="">
             <div class="close-modal-btn">
                 <span class="el-close-modal-btn"></span>
                 <span class="el-close-modal-btn"></span>
@@ -787,9 +787,9 @@
                 <p class="frorm-call-back-text-input">Номер телефона</p>
                 <input class="frorm-call-back-input-phone" type="phone" placeholder="+38(0__) ___ - __ - __">
                 <div class="btn-call-back-send">
-                <input class="button-form-call-back-input-send" type="submit" value="Перезвоните мне">
-                <div>
-            </div>
+                    <input class="button-form-call-back-input-send" type="submit" value="Перезвоните мне">
+                    <div>
+                    </div>
 
 
         </form>
